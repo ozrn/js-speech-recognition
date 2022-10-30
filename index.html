@@ -14,6 +14,21 @@
 
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // global variable that lives in the browser.
 
+    // creating a new instance of speech SpeechRecognition
+
+    const recognition = new SpeechRecognition();
+    recognition.interimResults = true; // as we're speaking, we can see text simultaneously so we're able to see what we're saying as we're speaking
+
+    let p = document.createElement("p");
+    const words = document.querySelector(".words");
+    words.appenChild(p);
+
+    recognition.addEventListener("result", e => {
+      console.log(e);
+    })
+
+    recognition.start();
+
   </script>
 
 
