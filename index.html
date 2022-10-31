@@ -33,6 +33,7 @@
       console.log(transcript);
     })
 
+    recognition.addEventListener("end", recognition.start); // when we stop speaking and start talking after a break, run the fn to start up recognition again
     recognition.start();
 
   </script>
