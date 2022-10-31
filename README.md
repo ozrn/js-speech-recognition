@@ -1,5 +1,5 @@
 # JS30 #20: js-speech-recognition
-This project is yet another project of JS30 practices by Wes Bos and it shows how to convert voice to text using Web speech API.
+This is yet another project of JS30 practices by Wes Bos and it shows how to convert voice to text using Web speech API.
 ## Installation
 Clone this repository with the command below
 ``` 
@@ -21,6 +21,6 @@ npm start
 ```
 Run the project at http://localhost:3000
 ### Overview
-When the code is run, the browser will ask permission to use your microphone so you will need to give permission.<br> The "result" event of Web speech API will be fired calling a function that gets transcript and returns it as a string, when speech is recognized.<br> Text context of paragraph will be set to transcript and new paragraphs will be added after each break.   
+When the code is run, the browser will ask permission to use your microphone so you will need to give permission.<br> The "result" event of Web speech API will be fired calling a function that gets transcript and returns it as a string, when speech is recognized. Text content of paragraph will be set to transcript and new paragraphs will be added after each break.   
 
 
