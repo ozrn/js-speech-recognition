@@ -30,7 +30,12 @@
       .map(result => result.transcript)
       .join("")
 
-      console.log(transcript);
+      p.textContent = transcript;
+
+      if(e.results[0].isFinal) {
+        p = document.createElement("p"); // we're going to overwrite this existing on here so don't assign p again!!
+        words.appendChild(p);
+      }
     })
 
     recognition.addEventListener("end", recognition.start); // when we stop speaking and start talking after a break, run the fn to start up recognition again
